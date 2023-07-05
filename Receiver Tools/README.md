@@ -16,8 +16,8 @@ SCL*informed.sol should be imported into the Solidity code of your smart contrac
 
 ### Smart Contracts Lab Addresses
 
-- Polygon Mainnet: 0x58e60cDC29099Aa54Df0EDCBF102896a819689Dc
-- Mumbai testnet: 0x58e60cDC29099Aa54Df0EDCBF102896a819689Dc
+- Polygon Mainnet: 0x6e0d61EA7eFbD198229c12Eb919BFd5C4caeDF5c
+- Mumbai testnet: 0x6e0d61EA7eFbD198229c12Eb919BFd5C4caeDF5c
 
 ### Smart Contracts Lab Commitments
 
