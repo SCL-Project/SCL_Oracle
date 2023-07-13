@@ -18,7 +18,7 @@ class BaseAPI(ABC):
         """
 
 
-class RandomOrgAPI(BaseAPI):
+class API_Class_Name(BaseAPI):
 
     # @function get_data receives the _query
     # the query is analysed, and the respective api function is called
