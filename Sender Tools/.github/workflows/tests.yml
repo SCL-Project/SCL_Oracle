@@ -1,0 +1,36 @@
+name: Run unittests for SCA
+
+on: 
+    push:
+        branches: [ Dev ]
+    pull_request:
+        branches: [ Dev ]
+
+    workflow_dispatch:
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: install node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: '14'
+            - name: npm install/test
+              run:
+                  npm install -g ganache;
+            - name: Install Python 3.8
+              uses: actions/setup-python@v1
+              with:
+                  python-version: 3.8
+            - name: Checkout SCA
+              uses: actions/checkout@v3
+              with:
+                path: main
+            - name: run unit tests
+              run:
+                cd main; ls;
+                python -m pip install --upgrade pip;
+                pip install -r requirements.txt;
+                python -m pytest ./test;

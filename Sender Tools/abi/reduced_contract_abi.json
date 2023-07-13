@@ -1,0 +1,118 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "orderID",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "_statusFlag",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "_status",
+                "type": "bool"
+            }
+        ],
+        "name": "dataDelivered",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_PIN",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "orderID",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "int64",
+                "name": "commitmentID",
+                "type": "int64"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "_location",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "_orderDate",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint40",
+                "name": "_gasForDelivery",
+                "type": "uint40"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "_gasPrice",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "receiverAddress",
+                "type": "address"
+            }
+        ],
+        "name": "newOrder",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "GetSenderID",
+        "outputs": [
+            {
+                "internalType": "int64",
+                "name": "",
+                "type": "int64"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint32",
+                "name": "orderID",
+                "type": "uint32"
+            },
+            {
+                "internalType": "int88",
+                "name": "_data",
+                "type": "int88"
+            },
+            {
+                "internalType": "bool",
+                "name": "_statusFlag",
+                "type": "bool"
+            }
+        ],
+        "name": "Relay",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    }
+]

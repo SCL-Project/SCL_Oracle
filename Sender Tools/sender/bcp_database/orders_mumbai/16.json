@@ -1,0 +1,19 @@
+{
+    "tx_hash": "0xaa0a68bdbdcebb65c773457b691979c43818690f00b4d476a8b43023a721965f",
+    "is_sent": 1,
+    "sent_date": 1689177017.7421489,
+    "order_data": {
+        "_PIN": "0x37179ae3B4495AF92c16438c56f98e6834028340",
+        "orderID": 16,
+        "commitmentID": 2,
+        "_location": "/docker_sca/sender/data_reader/example_csv_file.csv true 3",
+        "_orderDate": 0,
+        "_gasForDelivery": 240000,
+        "_gasPrice": 250000000000,
+        "receiverAddress": "0x5a0c220bcaC7d1802756B839d2Bc8A1D5de8a1A2"
+    },
+    "relay_tx_hash": "0x116f89753ebe9604ea28490a1589330f1591ca958e1eb3ea19021e3810f70695",
+    "nonce": 165,
+    "rescheduled": 0,
+    "blockNumber": 37853987
+}

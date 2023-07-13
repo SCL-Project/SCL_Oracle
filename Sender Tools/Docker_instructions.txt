@@ -1,0 +1,28 @@
+Build Docker Image
+
+1)Create Docker Image 
+docker build –-tag sca . 
+(This command has to be typed on a folder with the following structure
+|
+|-abi
+|-sender
+|-sender_init
+|-src
+|-Dockerfile
+|-main.py
+|-requirements.txt
+|-sca.txt
+)
+
+2)docker push repository:tag
+
+
+Run Docker Image
+1)	docker pull sca
+2)	docker create –it –v your\local\path:/docker_sca/sender –-name sca sca
+--> your\local\path is the location to the Sender Database (for example C:\Users\user\Desktop\SCA). This path can be empty
+3)	docker cp sca:docker_sca/sender_init/. your\local\path
+--> your\local\path hast to be the same as the one used in step 3 
+4)	docker start –i sca
+5)	ctr P + ctr Q (container running in the background)
+6)	docker logs sca
