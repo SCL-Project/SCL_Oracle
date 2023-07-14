@@ -55,7 +55,6 @@ class API_Class_Name(BaseAPI):
                     "method": "generateIntegers",
                     "params": {
                         "apiKey": "4d0b0789-0e4f-4ea4-a49f-2e5e67855f01",
-                        "n": n, # specify how many random numbers
                         "min": query_arg1,
                         "max": query_arg2, # don't enter anything > 999999999 
                         # "replacement": True # only relevant if n > 1

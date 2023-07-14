@@ -66,7 +66,7 @@ Contributions to the SCA are welcome! If you have any ideas, suggestions, or bug
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](../MIT-LICENSE).
 
 ## Acknowledgements
 
