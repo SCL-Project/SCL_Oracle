@@ -24,17 +24,20 @@ The SCA enables senders to link their commitments to an API. When a new order ar
 To use the SCA, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Configure the necessary environment variables, such as API credentials and wallet addresses, in the `.env` file.
-3. Build the Docker image by running `docker build -t sca-app .` in the root directory of the application.
-4. Start the Docker container using `docker run -d --name sca-container sca-app`.
-5. Register your commitments with the SCL oracle using the provided API endpoints.
-6. Monitor the SCA for incoming orders.
-7. Once an order arrives for a commitment and the order date is reached, the SCA will automatically make an API call to retrieve the requested information.
-8. The SCA will then relay the information to the receiver's smart contract using your registered wallet address.
+2. Configure the blockchain API credentials inside the `network_settings.json` file.
+3. Add your API-call files inside the `sender/data_reader/api/` folder and link the APIs to your commitment IDs inside the `data_loader.py` file.
+4. Build the Docker image by running `docker build -t sca-app .` in the root directory of the application.
+5. Start the Docker container using `docker run -d --name sca-container sca-app`.
+6. When starting the docker container, you will be asked to insert your PIN address as well as your private key. the private key will be stored encrypted in the file `credentials.json`.
+7. Register your commitments with the SCL oracle using the provided API endpoints.
+8. Monitor the SCA for incoming orders.
+9. Once an order arrives for a commitment and the order date is reached, the SCA will automatically make an API call to retrieve the requested information.
+10. The SCA will then relay the information to the receiver's smart contract using your registered wallet address.
 
 ## Configuration
 
-The SCA requires certain environment variables to be set for proper functioning. Create a `.env` file in the root directory of the application and populate it with the following variables:
+The SCA requires certain configuration to be set for proper functioning.
+Inside the folder `sender/settings` you will find the file `network_settings.json`. In this file you have to specify the blockchain API you want to use to connect to the blockchain, with your API-Key. As a default option, an Alchemy URL is set where you can insert your Alchemy API-key at the end. Of course, you can also use any other provider.
 
 ### data_loader.py
 
@@ -55,7 +58,7 @@ def load_apis() -> Dict[int, BaseAPI]:
 
 ### {api-filename}.py
 
-This file is used to to make an api call. The file is located at `Sender Tools/sender/api`.
+This file is used to to make an api call. The file is located at `Sender Tools/sender/api`. There is a template file you can use, as well as an example API file that connects to the random.org-API.
 
 ## Contributing
 
