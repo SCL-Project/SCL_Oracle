@@ -36,8 +36,8 @@ This section provides additional details about the SCL Oracle:
 
 ### Smart Contracts Lab Addresses
 
-- Polygon Mainnet: 0x6e0d61EA7eFbD198229c12Eb919BFd5C4caeDF5c
-- Mumbai Testnet: 0x6e0d61EA7eFbD198229c12Eb919BFd5C4caeDF5c
+- Polygon Mainnet: 0x4b8781De7f9104F47eaf8B61431EbAdaB713c61f
+- Mumbai Testnet: 0x4b8781De7f9104F47eaf8B61431EbAdaB713c61f
 
 ### Smart Contracts Lab Commitments
 
