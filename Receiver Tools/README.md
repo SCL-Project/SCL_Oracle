@@ -20,7 +20,7 @@ To utilize the SCL Oracle as a receiver, follow these steps:
 4. Once the information becomes available, it will be delivered to the `mailbox` function in your smart contract. Modify the `mailbox` function to process the received information according to your requirements.
 5. If needed, you can cancel an unfilled order using the `CancelOrder` function. This will reimburse the sender fee associated with the order.
 
-More detailed instructions on how to order from the existing two commitments (random.org API & CSV API) are provided as a PDF file on the Intranet. Follow this link `https://intranet.blockchainpresence.net/functional-platform/` to view it.
+More detailed instructions on how to order from the existing two commitments (random.org API & CSV API) are provided as a PDF file on the Intranet. Follow this link (https://intranet.blockchainpresence.net/functional-platform/) to view it.
 
 ## SCL_informed.sol
 
