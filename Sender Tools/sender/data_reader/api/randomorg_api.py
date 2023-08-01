@@ -35,21 +35,21 @@ class RandomOrgAPI(BaseAPI):
             upper = borders[2]
             lower = borders[1]
 
-        # if 2 arguments are given, set the second argument as upper border and set lower border to zero
+        # if 2 arguments are given, set the second argument as upper border and set lower border to first argument
         elif len(borders) == 2:
-            n = borders[0]
+            n = 1
+            lower = borders[0]
             upper = borders[1]
-            lower = 0
 
-        # if only 1 argument is given, define the range as [0,1]
+        # if only 1 argument is given, define the range as [0,argument]
         elif len(borders) == 1:
-            n = borders[0]
+            n = 1
             lower = 0
-            upper = 1
+            upper = borders[0]
 
         # in case 0 or more than two arguments are given, define the range as [0,1] and n as 1
         else:
-            n = borders[0]
+            n = 1
             lower = 0
             upper = 1
 
@@ -141,5 +141,5 @@ class RandomOrgAPI(BaseAPI):
 #  location can be modified as wishes for testing purposes       
 if __name__ == '__main__':
     obj = RandomOrgAPI()
-    location = "4 1 1000"
+    location = "1 10"
     print(obj.get_data(location))
